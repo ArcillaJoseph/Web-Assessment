@@ -22,3 +22,22 @@ function number() {
         alert("That's not a valid number!");
     }
 }
+
+document.getElementById("userForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const messageDiv = document.getElementById("message");
+
+    // Validation
+    if (!name || !email) {
+        messageDiv.textContent = "Please fill out all fields.";
+        messageDiv.style.color = "red";
+    } else {
+        messageDiv.textContent = "Submission successful!";
+        messageDiv.style.color = "green";
+        // Optionally, clear the form
+        document.getElementById("userForm").reset();
+    }
+});
