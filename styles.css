@@ -1,3 +1,28 @@
+body{
+    background-color: silver;
+}
 header{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkgreen;
+    background-color: rgb(3, 4, 26);
+    font-size: large;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
 
+section{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: blueviolet;
+    padding: 20px;
+    margin: auto;
+}
+
+footer{
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    padding: 20px;
+    margin: auto;
 }
